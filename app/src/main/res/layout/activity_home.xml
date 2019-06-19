@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sebi_icon_new"
+    tools:context=".Home">
+
+    <Button
+        android:id="@+id/herbID"
+        android:layout_width="398dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/oval"
+        android:text="@string/herb"
+        android:textColor="#F59687DD"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/cellfoodID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cellfoodID"
+        android:layout_width="398dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/oval"
+        android:text="@string/cell_food"
+        android:textColor="#9481DB"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/dietplanID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/herbID" />
+
+    <Button
+        android:id="@+id/dietplanID"
+        android:layout_width="405dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/oval"
+        android:text="@string/diet_plan"
+        android:textColor="#F59784DD"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/gameID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cellfoodID" />
+
+    <Button
+        android:id="@+id/gameID"
+        android:layout_width="393dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/oval"
+        android:text="@string/game"
+        android:textColor="#F59686CC"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dietplanID"
+        app:layout_constraintVertical_bias="0.401" />
+</android.support.constraint.ConstraintLayout>
